@@ -6,11 +6,10 @@ import PostTitle from '../components/post-title';
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
-      <article>
-        <img src="https://picsum.photos/200/200" alt="" />
-      </article>
       <PostTitle>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
+        <img src="https://picsum.photos/200/200" alt="" />
+
         <Avatar name={author.name} picture={author.picture} />
       </div>
       <div className="mb-8 md:mb-16 sm:mx-0">
